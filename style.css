@@ -21,6 +21,14 @@ html{
         align-items: center;
     }
     article, aside{width: 100%;}
+    
+    img {
+    border-radius: 100%;
+    width: 75%;
+    height: 40%;
+    margin: auto;
+    display: block;
+  }
 }
 
 body{
