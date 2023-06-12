@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+@media (max-width:600px){
+    .menu{
+        font-size: 1 rem;
+        margin-top: 10px;
+    }
+
+    menu li{
+        margin: 0 20px;
+    }
+    .contents{
+        margin-top: 20%;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    article, aside{width: 100%;}
+}
+
+body{
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: rgb(29, 21, 14);
+}
+
+img {
+    border-radius: 100%;
+    width: 75%;
+    height: 47%;
+    margin: auto;
+    display: block;
+  }
+
+#home_image{
+    background-image: url(images/home_image.png);
+    height: 270px;
+    background-position: center;
+}
+
+#research_image{
+background-image: url(images/research_image.png);
+height: 270px;
+background-position: center;
+}
+
+#teaching_image{
+    background-image: url(images/teaching_image.JPG);
+    height: 270px;
+    background-position: center;
+    }
+
+#Japanese_image{
+        background-image: url(images/japanese_image.JPG);
+        height: 270px;
+        background-position: center;
+}
+
+
+.SNS p{
+    margin-bottom: 5px;
+}
+
+
+.menu{
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 34px;
+    list-style: none;
+}
+.header{
+    display: flex;
+    font-size: 1.25rem;
+    margin-top: 34px;
+    margin-left: 36px;
+    list-style: none;
+}
+
+.menu li{
+    margin-left: 36px;
+}
+
+.header a{
+    color: rgb(34, 68, 78);
+}
+
+.header a:hover{
+    color: rgb(108, 164, 181);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.contents{
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.contents p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+.contents li{
+    font-size: 1rem;
+    margin: 10px 0 10px;
+}
+
+.contents a{
+    color: rgb(34, 68, 78);
+}
+
+.contents a:hover{
+    color: rgb(108, 164, 181);
+}
+
+
+.contents_profile_home{
+    width:30%
+}
+.SNS_home p{
+    font-size: 1rem;
+    margin: 5%;
+}
+.contents_main_home{
+    width: 63%
+}
+
+.contents_main_research h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.contents_main_research h2, h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.contents_main_research h4{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+.contents_main_research li{
+    text-align: left;
+    font-size: 1.1rem;
+}
+.abstract{
+    margin-left: 7%;
+}
+.abstract_tag{
+    color: rgb(234, 40, 40)
+}
+.abstract_contents{
+    font-size: 1rem;
+    color: rgb(12, 3, 60);
+}
+
+
+
+.contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+
+footer{
+    background: #fff;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: black;
+    font-size: 0.875rem;
+}
+
+
+footer a{
+    color: #074dc5;
+}
+
+footer a:hover{
+    color: #02112c;
+}
