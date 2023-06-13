@@ -71,10 +71,6 @@ background-position: center;
 }
 
 
-.SNS p{
-    margin-bottom: 5px;
-}
-
 
 .menu{
     display: flex;
@@ -141,9 +137,10 @@ background-position: center;
 .contents_profile_home{
     width:30%
 }
-.SNS_home p{
+.SNS_home span{
     font-size: 1rem;
     margin: 5%;
+    display: flex;
 }
 .contents_main_home{
     width: 63%
