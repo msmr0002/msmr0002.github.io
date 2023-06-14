@@ -37,13 +37,14 @@ img {
     display: block;
   }
 
-  .image_portrait {
+  .image_portrait{
     width: 100%;
     position: relative;
     padding-top: 100%%;
   }
   
-  .item__figure img {
+
+  .image_portrait img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
