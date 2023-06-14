@@ -51,6 +51,7 @@ img {
     position: absolute;
     top: 0;
     object-fit: cover;
+    aspect-ratio: 1/1;
   }
 
 #home_image{
