@@ -4,12 +4,7 @@ html{
     font-size: 100%;
 }
 
-@media(max-width: 600px){
-    .menu{
-        font-size: 1 rem;
-        margin-top: 10px;
-    }
-
+@media only screen and (max-width: 600px) {
     .menu{
         font-size: 1rem;
         margin-top: 10px;
@@ -21,10 +16,10 @@ html{
         flex-direction: column;
         align-items: center;
     }
-    .smartphone{
-        flex-direction: column;
+    article, 
+    aside{
+        width: 100%;
     }
-    article, aside{width: 100%;}
 }
 
 body{
@@ -133,6 +128,10 @@ background-position: center;
 .contents_profile_home{
     width:30%
 }
+.contents_main_home{
+    width: 63%
+}
+
 .SNS_home span{
     font-size: 1rem;
     margin: 3%;
@@ -143,12 +142,6 @@ background-position: center;
 .ssrn{
     font-size: 1rem;
     margin: auto;
-}
-
-
-
-.contents_main_home{
-    width: 63%
 }
 
 .contents_main_research h1{
