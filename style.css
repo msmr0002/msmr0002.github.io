@@ -4,7 +4,7 @@ html{
     font-size: 100%;
 }
 
-@media (max-width: 600px){
+@media(max-width: 600px){
     .menu{
         font-size: 1 rem;
         margin-top: 10px;
