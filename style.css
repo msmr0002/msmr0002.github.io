@@ -16,7 +16,7 @@ html{
     .contents{
         margin-top: 20%;
     }
-    .header{
+    .contents{
         flex-direction: column;
         align-items: center;
     }
