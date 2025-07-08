@@ -162,6 +162,7 @@ background-position: center;
     justify-content: space-evenly; /* Or space-around, or flex-start etc. depending on desired spacing */
     align-items: center; /* To vertically align icons if they have different heights */
     flex-wrap: wrap; /* Optional: if you want them to wrap to the next line on smaller screens */
+    align-items: center;
 }
 
 .SNS_home span {
@@ -169,6 +170,12 @@ background-position: center;
     font-size: 1rem;
     margin: 3%; /* Keep margin for spacing between icons */
     /* Remove display: flex; and justify-content: space-evenly; from here */
+}
+.SNS_home span i, /* Font Awesome & Academicons */
+.SNS_home span img { /* rm-icon.png */
+    height: 30px; /* 例: すべてのアイコンの高さを30pxに設定 */
+    width: auto; /* 幅は自動調整 */
+    vertical-align: middle; /* 特にimgタグの場合に試す */
 }
 
 .ssrn{
