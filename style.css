@@ -157,11 +157,18 @@ background-position: center;
     width: 63%
 }
 
-.SNS_home span{
-    font-size: 1rem;
-    margin: 3%;
+.SNS_home { /* Apply flex to the parent div */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* Or space-around, or flex-start etc. depending on desired spacing */
+    align-items: center; /* To vertically align icons if they have different heights */
+    flex-wrap: wrap; /* Optional: if you want them to wrap to the next line on smaller screens */
+}
+
+.SNS_home span {
+    /* You can remove or adjust these styles as needed, but display: flex; should be removed */
+    font-size: 1rem;
+    margin: 3%; /* Keep margin for spacing between icons */
+    /* Remove display: flex; and justify-content: space-evenly; from here */
 }
 
 .ssrn{
