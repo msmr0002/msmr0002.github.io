@@ -171,12 +171,6 @@ background-position: center;
     margin: 3%; /* Keep margin for spacing between icons */
     /* Remove display: flex; and justify-content: space-evenly; from here */
 }
-.SNS_home span i, /* Font Awesome & Academicons */
-.SNS_home span img { /* rm-icon.png */
-    height: 30px; /* 例: すべてのアイコンの高さを30pxに設定 */
-    width: auto; /* 幅は自動調整 */
-    vertical-align: middle; /* 特にimgタグの場合に試す */
-}
 
 .ssrn{
     font-size: 1rem;
