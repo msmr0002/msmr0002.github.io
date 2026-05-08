@@ -1,58 +1,31 @@
 @charset "UTF-8";
 
-html{
+html {
     font-size: 100%;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .header{
-        font-size: 2.5rem;}
-    .menu{
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-    .menu li{
-        margin: 0 10px;
-    }
-    .header{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wrapper{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-} */
-
-body{
+body {
     background-color: white;
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     color: rgb(29, 21, 14);
 }
 
+/* Portrait image — border-radius applied only here, not globally */
 img {
-    border-radius: 50%;
     width: 75%;
     height: auto;
     margin: auto;
     display: block;
-  }
+}
 
-  .image_portrait{
+.image_portrait {
     width: 100%;
     position: relative;
     padding-top: 100%;
-  }
-  
+}
 
-  .image_portrait img {
+.image_portrait img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -60,182 +33,222 @@ img {
     top: 0;
     object-fit: cover;
     aspect-ratio: 1/1;
-  }
+}
 
-#home_image{
+/* ── Hero banner images ── */
+#home_image {
     background-image: url(images/home_image.png);
     height: 270px;
     background-position: center;
 }
 
-#research_image{
-background-image: url(images/research_image.png);
-height: 270px;
-background-position: center;
+#research_image {
+    background-image: url(images/research_image.png);
+    height: 270px;
+    background-position: center;
 }
 
-#teaching_image{
+#teaching_image {
     background-image: url(images/teaching_image.jpg);
     height: 270px;
     background-position: center;
-    }
-
-#Japanese_image{
-        background-image: url(images/japanese_image.JPG);
-        height: 270px;
-        background-position: center;
 }
 
+#Japanese_image {
+    background-image: url(images/japanese_image.JPG);
+    height: 270px;
+    background-position: center;
+}
 
+/* ── Navigation ── */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-top: 34px;
+}
 
-.menu{
+.menu {
     display: flex;
     font-size: 1.25rem;
     margin-top: 34px;
     list-style: none;
 }
-.header{
-    display: flex;
-    font-size: 1.25rem;
-    margin-top: 34px;
-    margin-left: 36px;
-    list-style: none;
-}
 
-.menu li{
+.menu li {
     margin-left: 36px;
 }
 
-.header a{
+.header a {
     color: rgb(34, 68, 78);
 }
 
-.header a:hover{
+.header a:hover {
     color: rgb(108, 164, 181);
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.wrapper{
+/* ── Layout ── */
+.wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 4%;
 }
 
-.contents{
+.contents {
+    display: flex;
+    justify-content: space-between;
     margin-top: 5%;
+    margin-bottom: 50px;
     text-align: justify;
 }
 
-.contents p{
+.contents p {
     font-size: 1.125rem;
     margin: 10px 0 42px;
 }
 
-.contents li{
-    font-size: 1rem;
-    margin: 10px 0 10px;
+.contents ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-.contents a{
+.contents li {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.contents a {
     color: rgb(34, 68, 78);
 }
 
-.contents a:hover{
+.contents a:hover {
     color: rgb(108, 164, 181);
 }
 
-
-.contents_profile_home{
-    width:30%
-}
-.contents_main_home{
-    width: 63%
+.contents_profile_home {
+    width: 30%;
 }
 
-.SNS_home { /* Apply flex to the parent div */
+.contents_main_home {
+    width: 63%;
+}
+
+/* ── SNS icon row ── */
+.SNS_home {
     display: flex;
-    justify-content: space-evenly; /* Or space-around, or flex-start etc. depending on desired spacing */
-    align-items: center; /* To vertically align icons if they have different heights */
-    flex-wrap: wrap; /* Optional: if you want them to wrap to the next line on smaller screens */
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .SNS_home span {
-    /* You can remove or adjust these styles as needed, but display: flex; should be removed */
     font-size: 1rem;
-    margin: 3%; /* Keep margin for spacing between icons */
-    /* Remove display: flex; and justify-content: space-evenly; from here */
+    margin: 3%;
 }
 
-.ssrn{
-    font-size: 1rem;
-    margin: auto;
-}
-
-.contents_main_research h1{
+/* ── Research page ── */
+.contents_main_research h1 {
     text-align: center;
     font-weight: bolder;
     font-size: 1.8rem;
 }
 
-.contents_main_research h2, h3{
+.contents_main_research h2,
+.contents_main_research h3 {
     text-align: center;
     font-weight: bolder;
     font-size: 1.4rem;
     text-decoration: underline;
 }
 
-.contents_main_research h4{
+.contents_main_research h4 {
     text-align: center;
     font-weight: bolder;
     font-size: 1.25rem;
     text-decoration: underline;
 }
-.contents_main_research li{
+
+.contents_main_research ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contents_main_research li {
     text-align: left;
     font-size: 1.1rem;
 }
-.abstract{
+
+.abstract {
     margin-left: 7%;
 }
-.abstract_tag{
-    color: rgb(234, 40, 40)
+
+.abstract_tag {
+    color: rgb(234, 40, 40);
 }
-.abstract_contents{
+
+.abstract_contents {
     font-size: 1rem;
     color: rgb(12, 3, 60);
 }
 
-
-
-.contents{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-
-
-footer{
-    background: #fff;
+/* ── Footer ── */
+footer {
     text-align: center;
     padding: 26px 0;
 }
-footer p{
+
+footer p {
     color: black;
     font-size: 0.875rem;
 }
 
-
-footer a{
+footer a {
     color: #074dc5;
 }
 
-footer a:hover{
+footer a:hover {
     color: #02112c;
+}
+
+/* ── Mobile responsive ── */
+@media only screen and (max-width: 768px) {
+    #home_image,
+    #research_image,
+    #teaching_image,
+    #Japanese_image {
+        height: 180px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
+    .menu li {
+        margin: 4px 10px;
+    }
+
+    .contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contents_profile_home {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .contents_main_home {
+        width: 100%;
+        margin-top: 24px;
+    }
 }
